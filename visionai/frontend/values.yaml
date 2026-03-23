@@ -1,0 +1,3 @@
+image:
+  repository: oryprojectsdocker/visionai-frontend
+  tag: latest

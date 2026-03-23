@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: visionai-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: visionai-frontend
+  template:
+    metadata:
+      labels:
+        app: visionai-frontend
+    spec:
+      containers:
+        - name: visionai-frontend
+          image: oryprojectsdocker/visionai-frontend:
+          imagePullPolicy: Always  
+          ports:
+            - containerPort: 80
