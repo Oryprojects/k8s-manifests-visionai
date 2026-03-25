@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: visionai-frontend
-          image: oryprojectsdocker/visionai-frontend:
+          image: oryprojectsdocker/visionai-frontend:{{TAG}}
           imagePullPolicy: Always  
           ports:
             - containerPort: 80
